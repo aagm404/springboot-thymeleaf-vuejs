@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hello</title>
+</head>
+<body>
+
+	<!--/* 
+	Abaixo, o codigo "th:text" pertence ao mundo do Thymeleaf. Ja' os caracteres ${} pertencem a EL do Spring, chamada
+	de Spring EL. Esta Expression Language e' bem parecida com a EL do mundo de JSP e Servlet do JavaEE
+	
+	O que implementamos abaixo, funciona da seguinte maneira: O texto default da tag <span> e' Joao. Ou seja, se abrirmos este
+	documento HTML no browser como um arquivo e sem um servidor, o valor da tag <span> sera' renderizado como Joao.
+	
+	Porem, se acessarmos este documento HTML atraves de uma requisicao HTTP a um servidor, o Thymeleaf vai fazer o parse
+	do atributo "nome" que foi passado pelo controller para esta view e vai coloca-lo como texto renderizado dentro da tag <span>
+	 */-->
+	 
+	Oi <span th:text="${nome}">João</span>!
+</body>
+</html>
